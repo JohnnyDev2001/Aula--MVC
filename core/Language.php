@@ -6,7 +6,7 @@ class Language {
 
 	public function __construct() {
 		global $config;
-		$this->l = $config['defalt_lang'];
+		$this->l = $config['default_lang'];
 
 		if(!empty($_SESSION['lang']) && file_exists('lang/'.$_SESSION['lang'].'.ini')) {
 			$this->l = $_SESSION['lang'];
@@ -32,4 +32,8 @@ class Language {
 
 }
 
-?>
+
+
+
+
+

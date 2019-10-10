@@ -17,10 +17,10 @@
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href=""><?php $this->lang->get('LANGUAGE'); ?>
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php $this->lang->get('LANGUAGE'); ?>
 						<span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="<?php echo BASE_URL; ?>lang/set/eng">English</a></li>
+							<li><a href="<?php echo BASE_URL; ?>lang/set/en">English</a></li>
 							<li><a href="<?php echo BASE_URL; ?>lang/set/pt-br">Português</a></li>
 						</ul>
 					</li>
