@@ -9,8 +9,8 @@ $config = array();
 
 if(ENVIRONMENT == 'development')
 {
-    define("BASE_URL","http://localhost/loja/");
-    $config['dbname'] = 'loja_joao';
+    define("BASE_URL","http://localhost/AULA-MVC/");
+    $config['dbname'] = 'minha_loja';
     $config['host'] = 'localhost';
     $config['dbuser'] = 'root';
     $config['dbpass'] = '';
