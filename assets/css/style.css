@@ -317,13 +317,13 @@ hr
 */
 
 .copyright {
-	background-color: #3D3D3D;
-    padding: 17px 0;
-    line-height: 30px;
-    color: #8a8a8a;
+	background-color: #121b3c;;
+    padding: 5px 0;
+	line-height: 20px;
+	color:#fff;
 }
 .copyright span {
-	color:#FFF;
+	color:#fff;
 }
 .payments {
 	text-align: right;

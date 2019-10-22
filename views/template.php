@@ -278,15 +278,12 @@
 	    	<div class="copyright">
 	    		<div class="container">
 	    			<div class="row">
-						<div class="col-sm-6">© <span>New England Patriots</span> - <?php $this->lang->get('ALLRIGHTRESERVED'); ?>.</div>
-						<div class="col-sm-6">
-							<div class="payments">
-								<img src="<?php echo BASE_URL; ?>assets/images/visa.png" />
-								<img src="<?php echo BASE_URL; ?>assets/images/master.png" />
-								<img src="<?php echo BASE_URL; ?>assets/images/elo.png" />
-								<img src="<?php echo BASE_URL; ?>assets/images/hiper.png" />
-							</div>
-						</div>
+						<div class="col-sm" style="text-align: center; font-size: 12px; color: #fff;">© <span>Music Space Instrumentos Musicais Ltda CNPJ 18.986.449/0001-36 | Avenida Bahia, 1739 - Indaiá, Caraguatatuba - SP - CEP: 11665-071 <p>
+							<a href="#" style="text-decoration: none; color: #fff;">João Victor - Luan Vitor - Michael Pereira - Irys Mel |</a>
+							 Todos os direitos reservados. 2019
+						</p></span></div>
+						
+						
 					</div>
 	    		</div>
 	    	</div>
