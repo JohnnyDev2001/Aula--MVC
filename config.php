@@ -9,16 +9,16 @@ $config = array();
 
 if(ENVIRONMENT == 'development')
 {
-    define("BASE_URL","http://localhost/loja_michael/");
-    $config['dbname'] = 'cheel';
+    define("BASE_URL","http://localhost/Aula--MVC/");
+    $config['dbname'] = 'jr_bank';
     $config['host'] = 'localhost';
     $config['dbuser'] = 'root';
     $config['dbpass'] = '';
 }
 else
 {
-    define("BASE_URL","http://localhost/loja_michael/");
-    $config['dbname'] = 'cheel';
+    define("BASE_URL","http://localhost/aula_mvc/");
+    $config['dbname'] = 'jr_bank';
     $config['host'] = 'localhost';
     $config['dbuser'] = 'root';
     $config['dbpass'] = '';

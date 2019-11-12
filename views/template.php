@@ -7,6 +7,7 @@
 		<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="<?php echo BASE_URL; ?>asserts/css/bootstrap.min.css" type="text/css" />
 		<link rel="stylesheet" href="<?php echo BASE_URL; ?>asserts/css/style.css" type="text/css" />
+		<!--<link rel="stylesheet" href="<?php echo BASE_URL; ?>asserts/css/style2.css" type="text/css" />-->
 		<link rel="stylesheet" href="<?php echo BASE_URL; ?>asserts/css/bootstrap.css" type="text/css" />
 	</head>
 	<body>
@@ -220,10 +221,10 @@
 						<div class="col-sm-6">© <span>New England Patriots</span> - <?php $this->lang->get('ALLRIGHTRESERVED'); ?>.</div>
 						<div class="col-sm-6">
 							<div class="payments">
-								<img src="<?php echo BASE_URL; ?>asserts/images/visa.png" />
-								<img src="<?php echo BASE_URL; ?>asserts/images/master.png" />
-								<img src="<?php echo BASE_URL; ?>asserts/images/elo.png" />
-								<img src="<?php echo BASE_URL; ?>asserts/images/hiper.png" />
+								<img src="<?php echo BASE_URL; ?>asserts/images/bradesco.jpg" />
+								<img src="<?php echo BASE_URL; ?>asserts/images/bdb.png" />
+								<img src="<?php echo BASE_URL; ?>asserts/images/amer.png" />
+								<img src="<?php echo BASE_URL; ?>asserts/images/boleto.png" />
 							</div>
 						</div>
 					</div>
