@@ -1,5 +1,4 @@
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /Aula--MVC/index.php?q=$1 [QSA,L]
-
+RewriteRule ^(.*)$ /MusicSpace/index.php?q=$1 [QSA,L]

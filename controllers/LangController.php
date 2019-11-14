@@ -1,24 +1,17 @@
 <?php
+class langController extends controller {
 
-    class langController extends controller
-    {
-        private $user;
+	private $user;
 
-        public function __contructor()
-        {
-            parent::__construct();
-        }
-
-
-        public function set($lang)
-        {
-            $_SESSION['lang'] = $lang;
-            header("location:"."http://localhost/loja_michael/");
-        }
-
-
+    public function __construct() {
+        parent::__construct();
     }
 
+    public function index() {}
 
+    public function set($lang) {
+    	$_SESSION['lang'] = $lang;
+    	header("Location: ".BASE_URL);
+    }
 
-?>
+}
