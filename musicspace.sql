@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 14-Nov-2019 às 18:32
--- Versão do servidor: 10.1.37-MariaDB
--- versão do PHP: 7.3.1
+-- Generation Time: Nov 18, 2019 at 05:03 AM
+-- Server version: 10.1.38-MariaDB
+-- PHP Version: 7.3.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `brands`
+-- Table structure for table `brands`
 --
 
 CREATE TABLE `brands` (
@@ -34,7 +34,7 @@ CREATE TABLE `brands` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Extraindo dados da tabela `brands`
+-- Dumping data for table `brands`
 --
 
 INSERT INTO `brands` (`id`, `name`) VALUES
@@ -46,7 +46,7 @@ INSERT INTO `brands` (`id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `categories`
+-- Table structure for table `categories`
 --
 
 CREATE TABLE `categories` (
@@ -56,7 +56,7 @@ CREATE TABLE `categories` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Extraindo dados da tabela `categories`
+-- Dumping data for table `categories`
 --
 
 INSERT INTO `categories` (`id`, `sub`, `name`) VALUES
@@ -70,7 +70,7 @@ INSERT INTO `categories` (`id`, `sub`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `coupons`
+-- Table structure for table `coupons`
 --
 
 CREATE TABLE `coupons` (
@@ -83,7 +83,7 @@ CREATE TABLE `coupons` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `options`
+-- Table structure for table `options`
 --
 
 CREATE TABLE `options` (
@@ -92,7 +92,7 @@ CREATE TABLE `options` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Extraindo dados da tabela `options`
+-- Dumping data for table `options`
 --
 
 INSERT INTO `options` (`id`, `name`) VALUES
@@ -104,7 +104,7 @@ INSERT INTO `options` (`id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `pages`
+-- Table structure for table `pages`
 --
 
 CREATE TABLE `pages` (
@@ -116,7 +116,7 @@ CREATE TABLE `pages` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `products`
+-- Table structure for table `products`
 --
 
 CREATE TABLE `products` (
@@ -142,7 +142,7 @@ CREATE TABLE `products` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Extraindo dados da tabela `products`
+-- Dumping data for table `products`
 --
 
 INSERT INTO `products` (`id`, `id_category`, `id_brand`, `name`, `description`, `stock`, `price`, `price_from`, `rating`, `featured`, `sale`, `bestseller`, `new_product`, `options`, `weight`, `width`, `heigth`, `length`, `diameter`) VALUES
@@ -161,7 +161,7 @@ INSERT INTO `products` (`id`, `id_category`, `id_brand`, `name`, `description`, 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `products_images`
+-- Table structure for table `products_images`
 --
 
 CREATE TABLE `products_images` (
@@ -171,7 +171,7 @@ CREATE TABLE `products_images` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Extraindo dados da tabela `products_images`
+-- Dumping data for table `products_images`
 --
 
 INSERT INTO `products_images` (`id`, `id_product`, `url`) VALUES
@@ -190,7 +190,7 @@ INSERT INTO `products_images` (`id`, `id_product`, `url`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `products_options`
+-- Table structure for table `products_options`
 --
 
 CREATE TABLE `products_options` (
@@ -201,7 +201,7 @@ CREATE TABLE `products_options` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Extraindo dados da tabela `products_options`
+-- Dumping data for table `products_options`
 --
 
 INSERT INTO `products_options` (`id`, `id_product`, `id_option`, `p_value`) VALUES
@@ -243,7 +243,7 @@ INSERT INTO `products_options` (`id`, `id_product`, `id_option`, `p_value`) VALU
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `purchases`
+-- Table structure for table `purchases`
 --
 
 CREATE TABLE `purchases` (
@@ -258,7 +258,7 @@ CREATE TABLE `purchases` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `purchases_products`
+-- Table structure for table `purchases_products`
 --
 
 CREATE TABLE `purchases_products` (
@@ -271,7 +271,7 @@ CREATE TABLE `purchases_products` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `purchase_transactions`
+-- Table structure for table `purchase_transactions`
 --
 
 CREATE TABLE `purchase_transactions` (
@@ -284,7 +284,7 @@ CREATE TABLE `purchase_transactions` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `rates`
+-- Table structure for table `rates`
 --
 
 CREATE TABLE `rates` (
@@ -297,7 +297,7 @@ CREATE TABLE `rates` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Extraindo dados da tabela `rates`
+-- Dumping data for table `rates`
 --
 
 INSERT INTO `rates` (`id`, `id_product`, `id_user`, `date_rated`, `points`, `comment`) VALUES
@@ -307,7 +307,7 @@ INSERT INTO `rates` (`id`, `id_product`, `id_user`, `date_rated`, `points`, `com
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `users`
+-- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
@@ -318,11 +318,41 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Extraindo dados da tabela `users`
+-- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `email`, `password`, `name`) VALUES
-(1, 'suporte@b7web.com.br', '698dc19d489c4e4db73e28a713eab07b', 'Bonieky Lacerda');
+(1, 'suporte@b7web.com.br', '698dc19d489c4e4db73e28a713eab07b', 'Bonieky Lacerda'),
+(2, 'mjboss2001@gmail.com', '81dc9bdb52d04dc20036dbd8313ed055', 'João'),
+(3, 'adriano@gmail.com', '81dc9bdb52d04dc20036dbd8313ed055', 'Adriano');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users_info`
+--
+
+CREATE TABLE `users_info` (
+  `id` int(10) NOT NULL,
+  `id_user` int(10) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `cep` varchar(20) DEFAULT NULL,
+  `telefone` varchar(15) DEFAULT NULL,
+  `endereco` varchar(150) DEFAULT NULL,
+  `num_casa` varchar(150) DEFAULT NULL,
+  `cidade` varchar(150) DEFAULT NULL,
+  `estado` varchar(100) DEFAULT NULL,
+  `referencia` varchar(150) DEFAULT NULL,
+  `img_perfil` varchar(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `users_info`
+--
+
+INSERT INTO `users_info` (`id`, `id_user`, `name`, `email`, `cep`, `telefone`, `endereco`, `num_casa`, `cidade`, `estado`, `referencia`, `img_perfil`) VALUES
+(1, 1, 'Bonieky Lacerda', 'suporte@b7web.com.br', '', '(12) 9999-9999', '', '21', '', '', '', '1.jpg');
 
 --
 -- Indexes for dumped tables
@@ -407,6 +437,12 @@ ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `users_info`
+--
+ALTER TABLE `users_info`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -486,7 +522,13 @@ ALTER TABLE `rates`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `users_info`
+--
+ALTER TABLE `users_info`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

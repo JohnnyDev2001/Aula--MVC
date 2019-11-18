@@ -23,4 +23,14 @@ class controller {
 		include 'views/'.$viewName.'.php';
 	}
 
+	public function loadViewLC($viewName, $viewData = array()) {
+		extract($viewData);
+		include 'views/Login_Cadastro/'.$viewName.'.php';
+	}
+
+	public function loadViewP($viewName, $viewData = array()) {
+		extract($viewData);
+		include 'views/Perfil/'.$viewName.'.php';
+	}
+
 }
