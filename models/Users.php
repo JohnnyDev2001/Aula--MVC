@@ -69,6 +69,26 @@ class Users extends model {
 
         if($sql->execute()){
             $_SESSION['sucesso'] = "Cadastrado com sucesso!";
+            $dados = $sql->fetch();
+
+            $_SESSION['id_cad'] = $dados['id'];
+            return "true";
+        }else{
+            $_SESSION['erro'] = "Ocorreu um Erro!";
+            return "false";
+        }
+    }
+
+    public function RegisterUserInfo($name, $email){
+        $id = $_SESSION['id_cad'];
+        $sql = "INSERT INTO users_info SET name = :name, email = :email, id_user = $id";
+        $sql = $this->db->prepare($sql);
+        $sql->bindValue(":name", $name);
+        $sql->bindValue(":email", $email);
+        $sql->bindValue(":id", $id);
+
+        if($sql->execute()){
+            $_SESSION['sucesso'] = "Cadastrado com sucesso!";
             return "true";
         }else{
             $_SESSION['erro'] = "Ocorreu um Erro!";

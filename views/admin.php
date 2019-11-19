@@ -18,7 +18,7 @@
 
     <div class="container">
 		<div class="card" style="background-color:#f2f2f2; border: 1px solid #7575a3; padding: 5px; width:40%; margin: 20px auto;">
-			<form action="<?php echo BASE_URL; ?>" style="padding: 5px;">
+			<form action="" style="padding: 5px;">
 				<div class="form-group">
 						<label for="user">Usuario:</label>
 						<input type="text" class="form-control" id="user" name="user" style="width:100%;">

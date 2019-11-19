@@ -22,8 +22,11 @@ class cadastroController extends controller {
 
             $yuser = $users->loginExiste($email);
             if($yuser == "true"){
-
+                
                 if($users->RegisterUser($name, $email, $pass) == "true"){
+
+                    $users->RegisterUserInfo($name, $email);
+
                     header("Location: ".BASE_URL."login");
                 }else{
                     header("Location: ".BASE_URL."cadastro");
