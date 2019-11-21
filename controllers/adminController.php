@@ -10,7 +10,20 @@ class adminController extends controller {
 
     public function index(){
         $dados = array();
+        $crud = new Crud();
+
+        if(isset($_POST['user']) && !empty($_POST['user']){
+
+            $user = addslashes($_POST['user']);
+            $pass = addslashes($_POST['pass']);
+
+            if($crud->loginAdmin($user, $pass) == true){
+                header("Location: ".BASE_URL."crud");
+            }else{
+                header("Location: ".BASE_URL);
+            }
+        }
         
-        $this->loadView('admin', $dados);
+        $this->loadViewCrud('admin', $dados);
     } 
 }
