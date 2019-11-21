@@ -15,22 +15,6 @@
 
 	</head>
     <body>
-
-    <div class="container">
-		<div class="card" style="background-color:#f2f2f2; border: 1px solid #7575a3; padding: 5px; width:40%; margin: 20px auto;">
-			<form action="" style="padding: 5px;">
-				<div class="form-group">
-						<label for="user">Usuario:</label>
-						<input type="text" class="form-control" id="user" name="user" style="width:100%;">
-						<label for="senha">Senha:</label>
-						<input type="password" class="form-control" id="psw" name="psw" style="width:100%;">
-						<br>
-						<button type="submit" class="btn btn-primary">Entrar</button>
-				</div>
-			</form>
-		</div>
-	</div>
-
     <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/jquery.min.js"></script>
 		<script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/bootstrap.min.js"></script>

@@ -16,7 +16,7 @@ class cadastroController extends controller {
 
         if(isset($_POST['email']) && empty($_POST['email']) == false){
 
-            $name = addslashes($_POST['name']);
+            $name = addslashes($_POST['user']);
             $email = addslashes($_POST['email']);
             $pass = md5(addslashes($_POST['psw']));
 

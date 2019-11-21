@@ -33,4 +33,8 @@ class controller {
 		include 'views/Perfil/'.$viewName.'.php';
 	}
 
+	public function loadViewCrud($viewName, $viewData = array()) {
+		extract($viewData);
+		include 'views/Crud/'.$viewName.'.php';
+	}
 }

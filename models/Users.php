@@ -68,6 +68,11 @@ class Users extends model {
         $sql->bindValue(":pass", $pass);
 
         if($sql->execute()){
+            $sql = "Select * from users WHERE name = :name and email = :email";
+            $sql = $this->db->prepare($sql);
+            $sql->bindValue(":name", $name);
+            $sql->bindValue(":email", $email);
+            $sql->execute();
             $_SESSION['sucesso'] = "Cadastrado com sucesso!";
             $dados = $sql->fetch();
 
@@ -85,7 +90,6 @@ class Users extends model {
         $sql = $this->db->prepare($sql);
         $sql->bindValue(":name", $name);
         $sql->bindValue(":email", $email);
-        $sql->bindValue(":id", $id);
 
         if($sql->execute()){
             $_SESSION['sucesso'] = "Cadastrado com sucesso!";

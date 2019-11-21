@@ -1,5 +1,5 @@
 <?php
-class panController extends controller {
+class logoutController extends controller {
 
 	private $user;
 
