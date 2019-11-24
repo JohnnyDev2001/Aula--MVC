@@ -15,6 +15,40 @@
 
 	</head>
     <body>
+	<?php
+	$crud = new Crud();
+	$id = $_SESSION['id_prod'];
+	$dado = $crud->getProductWhere($id);
+
+	$dados = $dado->fetch();
+	?>
+	<div class="container" style="background-color:#f2f2f2; border: 1px solid #7575a3; padding: 5px;">
+					<form method="POST" style="padding: 5px;">
+						<div class="form-group">
+						  <label for="nome">Nome:</label>
+						  <input type="text" class="form-control" id="name" value="<?php echo $dados['name'];?>" name="name" style="width:20%;">
+						</div>
+						<div class="form-group">
+						  <label for="descrição">Descrição:</label>
+						  <input type="text" class="form-control" id="descrição" value="<?php echo $dados['description'];?>" name="desc" style="width:60%; height:100px;">
+						</div>
+						<div class="form-group">
+						  <label for="stock">Stock:</label>
+						  <input type="text" class="form-control" id="stock" value="<?php echo $dados['stock'];?>" name="stock" style="width:20%;">
+						</div>
+                        <div class="form-group">
+                          <label for="preço">Preço:</label>
+						  <input type="text" class="form-control" id="price" value="<?php echo $dados['price'];?>" name="price" style="width:20%;">
+                        </div>
+						<div class="form-group">
+						  <label for="preço de sei lá oq">Preço de sei lá oq:</label>
+						  <input type="text" class="form-control" id="price_from" value="<?php echo $dados['price_from'];?>" name="price_from" style="width:20%;">
+						</div>
+							<button type="submit" class="btn btn-primary">Salvar</button>
+					</form>
+				</div>
+				<br>
+
     <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/jquery.min.js"></script>
 		<script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/bootstrap.min.js"></script>

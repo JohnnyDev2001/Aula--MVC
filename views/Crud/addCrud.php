@@ -15,6 +15,28 @@
 
 	</head>
     <body>
+
+	<div class="container">
+		<div class="card" style="background-color:#f2f2f2; border: 1px solid #7575a3; padding: 5px; width:40%; margin: 20px auto;">
+			<form method="POST" style="padding: 5px;">
+				<div class="form-group">
+						<label for="nome">Nome:</label>
+						<input type="text" class="form-control" id="name" name="name" style="width:100%;">
+                        <label for="descrição">Descrição:</label>
+						<input type="text" class="form-control" id="desc" name="desc" style="width:100%;">
+						<label for="stock">Stock:</label>
+						<input type="text" class="form-control" id="stock" name="stock" style="width:100%;">
+						<label for="preço">Preço:</label>
+						<input type="text" class="form-control" id="price" name="price" style="width:100%;">
+						<label for="Preço sei lá do que">Preço sei lá do que:</label>
+						<input type="text" class="form-control" id="price_from" name="price_from" style="width:100%;">
+						<br>
+						<button type="submit" class="btn btn-primary">Cadastrar</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
     <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/jquery.min.js"></script>
 		<script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/bootstrap.min.js"></script>
