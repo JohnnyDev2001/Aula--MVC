@@ -12,6 +12,8 @@
 		<link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/jquery-ui.theme.min.css" type="text/css" />
 		<link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/style.css" type="text/css" />
 		<link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/style1.css" type="text/css" />
+		
+
 
 	</head>
 	<body>
@@ -40,13 +42,14 @@
 				</ul>
 			</div>
 		</nav>
+		
 		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img src="assets/images/img1.jpg" class="d-block w-100" alt="150">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+				<img src="assets/images/img1.jpg" class="d-block w-100" alt="...">
 				</div>
 				<div class="carousel-item">
-				<img src="assets/images/img1.jpg" class="d-block w-100" alt="150">
+				<img src="assets/images/guit.jpg" class="d-block w-100" alt="...">
 				</div>
 				<div class="carousel-item">
 				<img src="assets/images/img1.jpg" class="d-block w-100" alt="...">

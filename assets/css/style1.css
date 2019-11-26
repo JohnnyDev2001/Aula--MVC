@@ -1,10 +1,13 @@
 * { box-sizing: border-box; }
 body {
     font-family: 'Open Sans';
-    font-size:14px;
+	font-size:14px;
+	background-image: url(../images/vida.jpg);
+    background-attachment: fixed;
+    background-image: no-repeat;
 }
 .topnav.navbar {
-	background-color:#f9f9f9;
+	background-color:#003669ec;
 	border-bottom:1px solid #e0e0e0;
 	min-height:40px;
 	margin-bottom:0px;
@@ -12,7 +15,7 @@ body {
 .topnav .navbar-nav>li>a {
 	padding-top:10px;
     padding-bottom:10px;
-    color:#3D3D3D;
+    color:white;
 }
 .topnav .nav>li>a:hover,
 .dropdown.open .dropdown-toggle {
@@ -23,6 +26,7 @@ header {
 	padding-top:40px;
 	padding-bottom:40px;
 	border-bottom:1px solid #e0e0e0;
+	
 }
 .logo {
 	text-align: center;
@@ -42,6 +46,8 @@ header {
 	background-repeat:no-repeat;
 	background-position:left center;
 	display:inline;
+	color: white;
+	font-size: 16px;
 }
 .head_help {
 	background-image:url('../images/phone.png');
@@ -50,7 +56,7 @@ header {
 	background-image:url('../images/mail.png');
 }
 .head_email span {
-	color:#59b210;
+	color:white;
 }
 .search_area {
 	clear:both;
@@ -109,7 +115,7 @@ header {
 }
 .carttotal {
 	display:inline-block;
-	color:#000;
+	color:white;
 }
 .carttotal span {
 	color:#003669;
@@ -150,7 +156,7 @@ header {
 	border-right: 1px solid #e0e0e0;
 }
 .categoryarea .dropdown {
-	background-color:#59b210;
+	background-color:#003669;
 	border-radius:5px;
 }
 .categoryarea .dropdown .dropdown-toggle {
@@ -165,7 +171,7 @@ header {
 }
 .categoryarea .nav>li.dropdown>a:focus,
 .categoryarea .nav>li.dropdown>a:hover {
-	background-color:#59b210;
+	background-color:rgba(255, 0, 0, 0.651);
 	border-radius:5px;
 }
 
@@ -185,7 +191,8 @@ h1 {
 .filterarea {
 	border: 2px solid #ececec;
     border-radius: 10px;
-    padding:10px;
+	padding:10px;
+	color: #000;
 }
 
 .widget {
@@ -295,14 +302,22 @@ footer h3 {
 .product_item {
 	padding:10px;
 	border:1px solid #FFF;
+	background-color: white;
 }
 .product_item:hover {
 	border:1px solid #EEE;
+	-webkit-transform: scale(1.1);
+  	-moz-transform: scale(1.1);
+  	-o-transform: scale(1.1);
+  	-ms-transform: scale(1.1);
+	transform: scale(1.1);
 }
 .product_item a {
 	text-decoration: none;
 	display:block;
+	color: #003669;
 }
+
 .product_tags {
 	position:absolute;
 }
@@ -336,17 +351,21 @@ footer h3 {
 }
 .product_price_from {
 	float:left;
-	color:#CCC;
+	color:red;
 	font-size:12px;
 	margin-top:15px;
+	text-decoration: line-through;
 }
 .product_price {
 	float:right;
-	color:#000;
+	color:#003669;
 	font-weight: bold;
 	margin-top:15px;
 }
-
+.product_price:hover
+{
+	color:white;
+}
 .paginationItem {
 	width:40px;
 	height:40px;
@@ -355,14 +374,15 @@ footer h3 {
 	text-align: center;
 	line-height:40px;
 	display:inline-block;
+	background-color: black;
 }
 .paginationItem:hover,
 .pag_active {
-	border:1px solid #59b210;
+	border:2px solid #003669;
 }
 .paginationItem a {
 	display:block;
-	color:#000;
+	color:white;
 	text-decoration: none;
 }
 .paginationArea {

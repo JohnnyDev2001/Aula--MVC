@@ -1,0 +1,46 @@
+*
+{
+    background-image: url(../images/son5.jpg);
+    background-attachment: fixed;
+    background-image: no-repeat;
+
+
+
+}
+.container
+{
+    margin-top: 200px;
+
+}
+.card
+{
+    border: 2px solid black; 
+    padding: 10px; width:40%; 
+    margin: 20px auto;
+    border-radius: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.card h2
+{
+    text-align: center;
+}
+
+.card button
+{
+    margin-left: 150px;
+    padding: 10px;
+    color: white;
+    border: 1px solid black;
+    background-color: rgba(0, 140, 255, 0.863);
+}
+.card button:hover
+{
+    background-color: rgba(0, 191, 255, 0.459);
+}
+.card label
+{
+    font-weight: bold;
+    font-size: 20px;
+}
