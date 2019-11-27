@@ -1,6 +1,6 @@
 *
 {
-    background-image: url(../images/son5.jpg);
+    background-image: url(../images/son52.jpg);
     background-attachment: fixed;
     background-image: no-repeat;
 
@@ -14,7 +14,7 @@
 }
 .card
 {
-    border: 2px solid black; 
+    border: 3px solid white; 
     padding: 10px; width:40%; 
     margin: 20px auto;
     border-radius: 30px;
@@ -32,7 +32,7 @@
     margin-left: 150px;
     padding: 10px;
     color: white;
-    border: 1px solid black;
+    border: 1px solid white;
     background-color: rgba(0, 140, 255, 0.863);
 }
 .card button:hover
@@ -43,4 +43,20 @@
 {
     font-weight: bold;
     font-size: 20px;
+}
+
+.card input
+{
+    color: white;
+    background-color: rgba(0, 191, 255, 0.37);
+}
+
+.card input:hover
+{
+    border: 2px solid black;
+}
+
+.col-sm-7
+{
+    color: white;
 }

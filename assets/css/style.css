@@ -640,7 +640,7 @@ footer h3 {
 }
 .widget_productname {
 	font-weight: bold;
-	color:#0e53a5;
+	color:black;
 }
 .widget_price span {
 	color:white;
@@ -649,10 +649,11 @@ footer h3 {
 .original_price {
 	font-size:25px;
 	font-weight: bold;
+	color:white;
 }
 .price_from {
 	font-size:14px;
-	color:#CCC;
+	color:white;
 }
 
 .addtocartform {
@@ -665,6 +666,7 @@ footer h3 {
 	border:1px solid #CCC;
 	outline:0;
 	float:left;
+	color: #000;
 }
 .addtocartform button {
 	width:30px;
@@ -674,6 +676,7 @@ footer h3 {
 	border:1px solid #CCC;
 	background-color:#FFF;
 	float:left;
+	color: #000;
 }
 .addtocart_submit {
 	height:35px;

@@ -13,7 +13,9 @@
 		<link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/style.css" type="text/css" />
 		<link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/style1.css" type="text/css" />
 		
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 	</head>
 	<body>
@@ -46,13 +48,13 @@
 		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-				<img src="assets/images/img1.jpg" class="d-block w-100" alt="...">
+				<img src="assets/images/img2.jpg" class="d-block w-100" alt="...">
 				</div>
 				<div class="carousel-item">
-				<img src="assets/images/guit.jpg" class="d-block w-100" alt="...">
+				<img src="assets/images/img3.jpg" class="d-block w-100" alt="...">
 				</div>
 				<div class="carousel-item">
-				<img src="assets/images/img1.jpg" class="d-block w-100" alt="...">
+				<img src="assets/images/img30.jpg" class="d-block w-100" alt="...">
 				</div>
 			</div>
 			<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -223,7 +225,7 @@
 						<div class="col-sm-4">
 							<a href="<?php echo BASE_URL; ?>"><img width="150" src="<?php echo BASE_URL; ?>assets/images/music.png" /></a><br/><br/>
 							<strong>Music Space</strong><br/><br/>
-							Av. Bahia, 1739 - Indaiá, Caraguatatuba - SP, 11665-071
+							<strong>Av. Bahia, 1739 - Indaiá, Caraguatatuba - SP, 11665-071</strong>
 						</div>
 						<div class="col-sm-8 linkgroups">
 							<div class="row">
