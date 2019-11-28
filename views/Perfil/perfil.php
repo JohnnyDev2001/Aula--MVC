@@ -13,8 +13,13 @@
 		<link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/style.css" type="text/css" />
 		<link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/style1.css" type="text/css" />
 
+
 	</head>
     <body>
+		<?php
+			$dados = array();
+			$this->loadView('inicio', $dados);
+		?>
 
     <?php
         $users = new Users();
@@ -22,11 +27,11 @@
         $id_user = $_SESSION['id_user'];
         $dado = $users->infoPerfil($id_user);
         $dados = $dado->fetch();
-    ?>
+		?>
     <div class="container" style="padding: 5px; height:500px;">
 		<div class="card" style="width:30%; padding: 5px; background-color:#f2f2f2; float: left;">
             <div class="card-img-top" alt="Card image" style="width:100%; height:300px; background-image: url(<?php if($dados['img_perfil'] != ""){ echo "assets/img_perfil/".$dados['img_perfil'];}else{ echo 'https://via.placeholder.com/150';}?>); background-repeat: no-repeat; background-size: 100%;">
-                <a href="#"><button type="button" class="btn btn-primary">Foto</button></a>
+								<a href="#"><button type="button" class="btn btn-primary">Foto</button></a>
 			</div>
 			<div class="card-body">
 				<h4 class="card-title">PERFIL</h4>

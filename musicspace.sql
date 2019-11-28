@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 4.8.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 18, 2019 at 05:03 AM
--- Server version: 10.1.38-MariaDB
--- PHP Version: 7.3.4
+-- Generation Time: 28-Nov-2019 às 20:12
+-- Versão do servidor: 10.1.37-MariaDB
+-- versão do PHP: 7.3.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `brands`
+-- Estrutura da tabela `brands`
 --
 
 CREATE TABLE `brands` (
@@ -34,7 +34,7 @@ CREATE TABLE `brands` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `brands`
+-- Extraindo dados da tabela `brands`
 --
 
 INSERT INTO `brands` (`id`, `name`) VALUES
@@ -46,7 +46,7 @@ INSERT INTO `brands` (`id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `categories`
+-- Estrutura da tabela `categories`
 --
 
 CREATE TABLE `categories` (
@@ -56,7 +56,7 @@ CREATE TABLE `categories` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `categories`
+-- Extraindo dados da tabela `categories`
 --
 
 INSERT INTO `categories` (`id`, `sub`, `name`) VALUES
@@ -64,13 +64,13 @@ INSERT INTO `categories` (`id`, `sub`, `name`) VALUES
 (14, NULL, 'Guitarra'),
 (15, 14, 'Eletrica'),
 (16, 14, 'Acustica'),
-(17, 15, 'Com Fio'),
-(18, 15, 'Sem Fio');
+(17, 15, 'Corda Fina'),
+(18, 15, 'Corda Larga');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `coupons`
+-- Estrutura da tabela `coupons`
 --
 
 CREATE TABLE `coupons` (
@@ -83,7 +83,7 @@ CREATE TABLE `coupons` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `options`
+-- Estrutura da tabela `options`
 --
 
 CREATE TABLE `options` (
@@ -92,7 +92,7 @@ CREATE TABLE `options` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `options`
+-- Extraindo dados da tabela `options`
 --
 
 INSERT INTO `options` (`id`, `name`) VALUES
@@ -104,7 +104,7 @@ INSERT INTO `options` (`id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pages`
+-- Estrutura da tabela `pages`
 --
 
 CREATE TABLE `pages` (
@@ -116,7 +116,7 @@ CREATE TABLE `pages` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `products`
+-- Estrutura da tabela `products`
 --
 
 CREATE TABLE `products` (
@@ -142,7 +142,7 @@ CREATE TABLE `products` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `products`
+-- Extraindo dados da tabela `products`
 --
 
 INSERT INTO `products` (`id`, `id_category`, `id_brand`, `name`, `description`, `stock`, `price`, `price_from`, `rating`, `featured`, `sale`, `bestseller`, `new_product`, `options`, `weight`, `width`, `heigth`, `length`, `diameter`) VALUES
@@ -156,12 +156,19 @@ INSERT INTO `products` (`id`, `id_category`, `id_brand`, `name`, `description`, 
 (8, 6, 1, 'Cajon Black Classico', 'Cajon Black Classico com grande durabilidade e resistência', 10, 599, 699, 5, 1, 1, 0, 1, '4', 0.8, 20, 15, 20, 15),
 (9, 6, 1, 'Violao Classico Tyerri', 'Violao Classico Tyerri com grande durabilidade e resistência', 10, 560, 750, 2, 1, 0, 0, 1, '4', 0.85, 20, 15, 20, 15),
 (10, 6, 2, 'Violao Eletrico Murray Dex', 'Violao Eletrico Murray Dex com grande durabilidade e resistência', 10, 750, 850, 3, 0, 1, 1, 0, '1,2', 1, 20, 15, 20, 15),
-(11, 6, 1, 'Violino Outlet Silver', 'Violino Outlet Silver com grande durabilidade e resistência', 10, 950, 1200, 4, 1, 0, 1, 0, '1,2,3', 0.7, 20, 15, 20, 15);
+(11, 6, 1, 'Violino Outlet Silver', 'Violino Outlet Silver com grande durabilidade e resistência', 10, 950, 1200, 4, 1, 0, 1, 0, '1,2,3', 0.7, 20, 15, 20, 15),
+(12, 6, 2, 'Guitarra Red Cowbol Size', 'Grande durabilidade e resistência', 10, 960, 1200, 3, 0, 1, 0, 0, '2', 0.85, 20, 15, 20, 15),
+(13, 6, 3, 'Guitarra Yellow Cowbol size', 'Grande durabilidade e resistência', 10, 850, 1100, 5, 1, 0, 1, 0, '2,5', 0.8, 20, 15, 20, 15),
+(14, 6, 2, 'Guitarra Green Cowbol size', 'Grande durabilidade e resistência', 10, 780, 1000, 4, 0, 1, 0, 0, '1,2,3', 0.8, 20, 15, 20, 15),
+(15, 6, 1, 'Violao Rose Hell Caunt', 'Grande durabilidade e resistência', 10, 900, 1050, 3, 1, 0, 1, 0, '3,4', 0.8, 20, 15, 20, 15),
+(16, 6, 1, 'Violao Murmura Hell Caunt', 'Grande durabilidade e resistência', 10, 750, 1060, 5, 0, 0, 0, 0, '1,2,3', 0.8, 20, 15, 20, 15),
+(17, 6, 4, 'Ukelele Marrom Hell Caunt', 'Grande durabilidade e resistência', 10, 960, 1320, 4, 0, 1, 1, 0, '1,2', 0.8, 20, 15, 20, 15),
+(18, 6, 3, 'Ukelele Rose Hell Caunt', 'Grande durabilidade e resistência', 10, 860, 950, 2, 1, 0, 1, 0, '1,2,3', 0.8, 20, 15, 20, 15);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `products_images`
+-- Estrutura da tabela `products_images`
 --
 
 CREATE TABLE `products_images` (
@@ -171,7 +178,7 @@ CREATE TABLE `products_images` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `products_images`
+-- Extraindo dados da tabela `products_images`
 --
 
 INSERT INTO `products_images` (`id`, `id_product`, `url`) VALUES
@@ -185,12 +192,19 @@ INSERT INTO `products_images` (`id`, `id_product`, `url`) VALUES
 (8, 8, '8.jpg'),
 (9, 9, '9.jpg'),
 (10, 10, '10.jpg'),
-(11, 11, '11.jpg');
+(11, 11, '11.jpg'),
+(12, 12, '12.jpg'),
+(13, 13, '13.jpg'),
+(14, 14, '14.jpg'),
+(15, 15, '15.jpg'),
+(16, 16, '16.jpg'),
+(17, 17, '17.jpg'),
+(18, 18, '18.jpg');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `products_options`
+-- Estrutura da tabela `products_options`
 --
 
 CREATE TABLE `products_options` (
@@ -201,7 +215,7 @@ CREATE TABLE `products_options` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `products_options`
+-- Extraindo dados da tabela `products_options`
 --
 
 INSERT INTO `products_options` (`id`, `id_product`, `id_option`, `p_value`) VALUES
@@ -243,7 +257,7 @@ INSERT INTO `products_options` (`id`, `id_product`, `id_option`, `p_value`) VALU
 -- --------------------------------------------------------
 
 --
--- Table structure for table `purchases`
+-- Estrutura da tabela `purchases`
 --
 
 CREATE TABLE `purchases` (
@@ -258,7 +272,7 @@ CREATE TABLE `purchases` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `purchases_products`
+-- Estrutura da tabela `purchases_products`
 --
 
 CREATE TABLE `purchases_products` (
@@ -271,7 +285,7 @@ CREATE TABLE `purchases_products` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `purchase_transactions`
+-- Estrutura da tabela `purchase_transactions`
 --
 
 CREATE TABLE `purchase_transactions` (
@@ -284,7 +298,7 @@ CREATE TABLE `purchase_transactions` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `rates`
+-- Estrutura da tabela `rates`
 --
 
 CREATE TABLE `rates` (
@@ -297,7 +311,7 @@ CREATE TABLE `rates` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `rates`
+-- Extraindo dados da tabela `rates`
 --
 
 INSERT INTO `rates` (`id`, `id_product`, `id_user`, `date_rated`, `points`, `comment`) VALUES
@@ -307,7 +321,7 @@ INSERT INTO `rates` (`id`, `id_product`, `id_user`, `date_rated`, `points`, `com
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Estrutura da tabela `users`
 --
 
 CREATE TABLE `users` (
@@ -318,18 +332,17 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `users`
+-- Extraindo dados da tabela `users`
 --
 
 INSERT INTO `users` (`id`, `email`, `password`, `name`) VALUES
 (1, 'suporte@b7web.com.br', '698dc19d489c4e4db73e28a713eab07b', 'Bonieky Lacerda'),
-(2, 'mjboss2001@gmail.com', '81dc9bdb52d04dc20036dbd8313ed055', 'João'),
-(3, 'adriano@gmail.com', '81dc9bdb52d04dc20036dbd8313ed055', 'Adriano');
+(2, 'michael.pereira.rocha10@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'Michael Pereira');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users_info`
+-- Estrutura da tabela `users_info`
 --
 
 CREATE TABLE `users_info` (
@@ -348,10 +361,11 @@ CREATE TABLE `users_info` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `users_info`
+-- Extraindo dados da tabela `users_info`
 --
 
 INSERT INTO `users_info` (`id`, `id_user`, `name`, `email`, `cep`, `telefone`, `endereco`, `num_casa`, `cidade`, `estado`, `referencia`, `img_perfil`) VALUES
+(0, 2, 'Michael Pereira', 'michael.pereira.rocha10@gmail.com', '', '38811705', '', '', '', '', '', NULL),
 (1, 1, 'Bonieky Lacerda', 'suporte@b7web.com.br', '', '(12) 9999-9999', '', '21', '', '', '', '1.jpg');
 
 --
@@ -480,13 +494,13 @@ ALTER TABLE `pages`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `products_images`
 --
 ALTER TABLE `products_images`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `products_options`
@@ -522,13 +536,7 @@ ALTER TABLE `rates`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT for table `users_info`
---
-ALTER TABLE `users_info`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

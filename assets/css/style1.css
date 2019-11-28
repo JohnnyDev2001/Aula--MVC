@@ -1,4 +1,5 @@
-* { box-sizing: border-box; }
+* { box-sizing: border-box; 
+	color: black;}
 body {
     font-family: 'Open Sans';
 	font-size:14px;
@@ -71,7 +72,7 @@ header {
 	margin:0;
 	padding:0;
 	outline:0;
-	background-color:#FFF;
+	
 }
 .search_area input[type=text] {
 	height:44px;
@@ -308,6 +309,7 @@ footer h3 {
 	padding:10px;
 	border:1px solid #FFF;
 	background-color: white;
+	margin-bottom: 50px;
 }
 .product_item:hover {
 	border:1px solid #EEE;
