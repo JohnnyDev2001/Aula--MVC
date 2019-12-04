@@ -16,18 +16,14 @@
 		<div class="card">
 			<form method="POST" style="padding: 5px;">
 				<div class="form-group">
-				<h2>Login</h2>
+				<h2>Recuperar Senha</h2>
                         <label for="email">Email:</label>
 						<input type="email" class="form-control" id="email" name="email" style="width:100%;">
-						<label for="senha">Senha:</label>
-						<input type="password" class="form-control" id="psw" name="psw" style="width:100%;">
 						<br>
 						<button type="submit" class="btn btn-primary" style="position:relative; left:30px;"> Logar </button>
 				</div>
 			</form>
-			<center><a href="<?php echo BASE_URL; ?>recuperar">Esqueci minha senha</a></center>
 		</div>
-		<center><b style="color: #fff">Click aqui para </b><a href="<?php echo BASE_URL; ?>cadastro">Cadastrar-se</a></center>
 	</div>
 
     <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/jquery.min.js"></script>
