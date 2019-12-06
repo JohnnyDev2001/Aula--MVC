@@ -23,6 +23,7 @@ class cadastroController extends controller {
             $yuser = $users->loginExiste($email);
             if($yuser == "true"){
                 
+
                 if($users->RegisterUser($name, $email, $pass) == "true"){
 
                     $users->RegisterUserInfo($name, $email);

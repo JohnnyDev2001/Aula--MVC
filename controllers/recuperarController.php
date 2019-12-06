@@ -15,7 +15,10 @@ class recuperarController extends controller {
         if(isset($_POST['email']) && !empty($_POST['email'])){
             $email = addslashes($_POST['email']);
 
-            $recuper->VerificEmail($email);
+            if($recuper->VerificEmail($email) > 0){
+                header('Location: '.BASE_URL.'email');
+            }
+
         }
 
         $this->loadViewLC("recuperar", $bases);

@@ -7,7 +7,9 @@ class Recuper extends model {
         $sql->bindValue(":email", $email);
 		$sql->execute();
 
-        return $sql;
+        return $sql->rowCount();
     }
+
+
 
 }

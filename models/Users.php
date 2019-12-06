@@ -68,15 +68,7 @@ class Users extends model {
         $sql->bindValue(":pass", $pass);
 
         if($sql->execute()){
-            $sql = "Select * from users WHERE name = :name and email = :email";
-            $sql = $this->db->prepare($sql);
-            $sql->bindValue(":name", $name);
-            $sql->bindValue(":email", $email);
-            $sql->execute();
             $_SESSION['sucesso'] = "Cadastrado com sucesso!";
-            $dados = $sql->fetch();
-
-            $_SESSION['id_cad'] = $dados['id'];
             return "true";
         }else{
             $_SESSION['erro'] = "Ocorreu um Erro!";
@@ -85,13 +77,23 @@ class Users extends model {
     }
 
     public function RegisterUserInfo($name, $email){
-        $id = $_SESSION['id_cad'];
-        $sql = "INSERT INTO users_info SET name = :name, email = :email, id_user = $id";
+        $sql = "SELECT * FROM users WHERE email = :email";
         $sql = $this->db->prepare($sql);
-        $sql->bindValue(":name", $name);
         $sql->bindValue(":email", $email);
+        $sql->execute();
 
-        if($sql->execute()){
+        if($sql->rowCount() > 0){
+            $dados = $sql->fetch();
+            $id = $dados['id'];
+
+            $sql = "INSERT INTO users_info SET name = :name, email = :email, id_user = :id";
+            $sql = $this->db->prepare($sql);
+            $sql->bindValue(":name", $name);
+            $sql->bindValue(":email", $email);
+            $sql->bindValue(":id", $id);
+            $sql->execute();
+
+        
             $_SESSION['sucesso'] = "Cadastrado com sucesso!";
             return "true";
         }else{
