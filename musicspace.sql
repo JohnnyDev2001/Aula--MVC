@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 28-Nov-2019 às 20:12
+-- Generation Time: 09-Dez-2019 às 18:30
 -- Versão do servidor: 10.1.37-MariaDB
 -- versão do PHP: 7.3.1
 
@@ -337,7 +337,12 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `email`, `password`, `name`) VALUES
 (1, 'suporte@b7web.com.br', '698dc19d489c4e4db73e28a713eab07b', 'Bonieky Lacerda'),
-(2, 'michael.pereira.rocha10@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'Michael Pereira');
+(2, 'michael.pereira.rocha10@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'Michael Pereira'),
+(3, 'lucasmoura@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'Lucas Moura'),
+(4, 'lucassilva@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'Lucas Silva'),
+(5, 'brunolima@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'Bruno Lima'),
+(6, 'brunolima10@gmail', 'e10adc3949ba59abbe56e057f20f883e', 'Bruno Lima'),
+(7, 'marcelobreno@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'marcelo Breno');
 
 -- --------------------------------------------------------
 
@@ -346,8 +351,8 @@ INSERT INTO `users` (`id`, `email`, `password`, `name`) VALUES
 --
 
 CREATE TABLE `users_info` (
-  `id` int(10) NOT NULL,
   `id_user` int(10) NOT NULL,
+  `id` int(10) NOT NULL,
   `name` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
   `cep` varchar(20) DEFAULT NULL,
@@ -364,9 +369,10 @@ CREATE TABLE `users_info` (
 -- Extraindo dados da tabela `users_info`
 --
 
-INSERT INTO `users_info` (`id`, `id_user`, `name`, `email`, `cep`, `telefone`, `endereco`, `num_casa`, `cidade`, `estado`, `referencia`, `img_perfil`) VALUES
-(0, 2, 'Michael Pereira', 'michael.pereira.rocha10@gmail.com', '', '38811705', '', '', '', '', '', NULL),
-(1, 1, 'Bonieky Lacerda', 'suporte@b7web.com.br', '', '(12) 9999-9999', '', '21', '', '', '', '1.jpg');
+INSERT INTO `users_info` (`id_user`, `id`, `name`, `email`, `cep`, `telefone`, `endereco`, `num_casa`, `cidade`, `estado`, `referencia`, `img_perfil`) VALUES
+(6, 1, 'Bruno Lima', 'brunolima10@gmail', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(1, 2, 'Bonieky Lacerda', 'suporte@b7web.com.br', '', '(12) 9999-9999', '', '21', '', '', '', '1.jpg'),
+(7, 3, 'marcelo Breno', 'marcelobreno@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 --
 -- Indexes for dumped tables
@@ -494,7 +500,7 @@ ALTER TABLE `pages`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `products_images`
@@ -536,7 +542,13 @@ ALTER TABLE `rates`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `users_info`
+--
+ALTER TABLE `users_info`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
