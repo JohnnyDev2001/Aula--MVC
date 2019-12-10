@@ -30,7 +30,7 @@
 		?>
     <div class="container" style="padding: 5px; height:500px;">
 		<div class="card" style="width:30%; padding: 5px; background-color:#f2f2f2; float: left;">
-            <div class="card-img-top" alt="Card image" style="width:100%; height:300px; background-image: url(<?php if($dados['img_perfil'] != ""){ echo "assets/img_perfil/".$dados['img_perfil'];}else{ echo "assets/img_perfil/perfil.png";}?>); background-repeat: no-repeat; background-size: 100%;">
+            <div class="card-img-top" alt="Card image" style="width:100%; height:300px; background-image: url(<?php if($dados['img_perfil'] != ""){ echo "assets/img_perfil/".$dados['img_perfil'];}else{ echo "assets/img_perfil/perfil.png"; }?>); background-repeat: no-repeat; background-size: 100%;">
 				<a href="<?php echo BASE_URL; ?>upload"><button type="button" class="btn btn-primary">Foto</button></a>
 			</div>
 			<div class="card-body">

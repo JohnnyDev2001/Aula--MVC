@@ -20,9 +20,9 @@
 		<div class="card" style="background-color:#f2f2f2; border: 1px solid #7575a3; padding: 5px; width:40%; margin: 20px auto;">
 			<form method="POST" style="padding: 5px;">
 				<div class="form-group">
-						<label for="user">Usuario:</label>
+						<label style="color: #000;" for="user">Usuario:</label>
 						<input type="text" class="form-control" id="user" name="user" style="width:100%;">
-						<label for="senha">Senha:</label>
+						<label style="color: #000;" for="senha">Senha:</label>
 						<input type="password" class="form-control" id="pass" name="pass" style="width:100%;">
 						<br>
 						<button type="submit" class="btn btn-primary">Entrar</button>
