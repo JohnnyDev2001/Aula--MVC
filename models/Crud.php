@@ -47,7 +47,7 @@ class Crud extends model {
 
 
     public function atualizaProd($id_prod, $name, $desc, $stock, $price, $price_from){
-        $sql = "UPDATE products SET name = $name, description = '$desc', stock = '$stock', price = '$price', price_from = '$price_from' where id='$id_prod'";
+        $sql = "UPDATE products SET name = '$name', description = '$desc', stock = '$stock', price = '$price', price_from = '$price_from' where id = '$id_prod'";
         $sql = $this->db->prepare($sql);
         $a = true;
 
