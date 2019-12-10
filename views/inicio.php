@@ -14,7 +14,7 @@
 						</ul>
 					</li>
 					<?php if(isset($_SESSION['id_user']) && !empty($_SESSION['id_user'])){?>
-						<li><a href="<?php echo BASE_URL; ?>perfil"><?php $this->lang->get('PERFIL'); ?></a></li>
+						<li><a href="<?php echo BASE_URL; ?>perfil"><img src="assets/images/perf.jpg" width="15px" height="15px" style="border-radius: 10px;"/> <?php $this->lang->get('PERFIL'); ?></a></li>
 						<li><a href="<?php echo BASE_URL; ?>logout">Sair</a></li>
 					<?php }else{?>
 						<li><a href="<?php echo BASE_URL; ?>login"><?php $this->lang->get('LOGIN'); ?></a></li>
