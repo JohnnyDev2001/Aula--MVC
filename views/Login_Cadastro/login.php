@@ -13,6 +13,7 @@
     <body>
 
     <div class="container">
+		<a href="<?php echo BASE_URL; ?>"><button class="btn" style="color: #fff; background-color: green; border-radius: 5px; position:relative; left: 350px;">INICIO</button></a>
 		<div class="card">
 			<form method="POST" style="padding: 5px;">
 				<div class="form-group">
@@ -25,9 +26,9 @@
 						<button type="submit" class="btn btn-primary" style="position:relative; left:30px;"> Logar </button>
 				</div>
 			</form>
-			<center><a href="<?php echo BASE_URL; ?>recuperar">Esqueci minha senha</a></center>
+			<center><b><a href="<?php echo BASE_URL; ?>recuperar">Esqueci minha senha</a></b></center>
 		</div>
-		<center><b style="color: #fff">Click aqui para </b><a href="<?php echo BASE_URL; ?>cadastro">Cadastrar-se</a></center>
+		<center><b style="color: #fff">Click aqui para <a href="<?php echo BASE_URL; ?>cadastro">Cadastrar-se</a></b></center>
 	</div>
 
     <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/jquery.min.js"></script>

@@ -47,13 +47,14 @@
 
 .card input
 {
-    color: white;
-    background-color: rgba(0, 191, 255, 0.37);
+    color: #000;
+    background-color: #fff;
 }
 
 .card input:hover
 {
     border: 2px solid black;
+    background-color: rgba(0, 191, 255, 0.459);
 }
 
 .col-sm-7

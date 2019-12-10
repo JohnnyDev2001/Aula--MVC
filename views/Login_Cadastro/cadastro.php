@@ -13,6 +13,7 @@
 	</head>
     <body>
 		<div class="container">
+			<a href="<?php echo BASE_URL; ?>"><button class="btn" style="color: #fff; background-color: green; border-radius: 5px; position:relative; left: 350px;">INICIO</button></a>
 			<div class="card"> 
 				<form method="POST" style="padding: 5px;">
 					<div class="form-group">
@@ -27,6 +28,7 @@
 							<button type="submit" class="btn btn-primary">Cadastrar</button>
 					</div>
 				</form>
+				<center><b style="color: #fff">Click aqui para <a href="<?php echo BASE_URL; ?>login">Fazer Login</a></b></center>
 			</div>
 		</div>
 
