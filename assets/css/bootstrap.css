@@ -271,7 +271,7 @@ a {
 }
 
 a:hover {
-  color: black;
+  color: blue;
   text-decoration: underline;
 }
 

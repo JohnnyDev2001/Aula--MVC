@@ -30,50 +30,41 @@
 		?>
     <div class="container" style="padding: 5px; height:500px;">
 		<div class="card" style="width:30%; padding: 5px; background-color:#f2f2f2; float: left;">
-            <div class="card-img-top" alt="Card image" style="width:100%; height:300px; background-image: url(<?php if($dados['img_perfil'] != ""){ echo "assets/img_perfil/".$dados['img_perfil'];}else{ echo 'https://via.placeholder.com/150';}?>); background-repeat: no-repeat; background-size: 100%;">
-								<a href="#"><button type="button" class="btn btn-primary">Foto</button></a>
+            <div class="card-img-top" alt="Card image" style="width:100%; height:300px; background-image: url(<?php if($dados['img_perfil'] != ""){ echo "assets/img_perfil/".$dados['img_perfil'];}else{ echo "assets/img_perfil/perfil.png";}?>); background-repeat: no-repeat; background-size: 100%;">
+				<a href="<?php echo BASE_URL; ?>upload"><button type="button" class="btn btn-primary">Foto</button></a>
 			</div>
 			<div class="card-body">
-				<h4 class="card-title">PERFIL</h4>
+				<h4 class="card-title" style="color:#000;">PERFIL</h4>
 				<p class="card-text"><b>Nome: <?php echo $dados['name'];?></b></p>
 				<p class="card-text"><b>Email: <?php echo $dados['email'];?></b></p>
 			</div>
 		</div>
-		<div class="card" style="width:30%; padding: 5px; background-color:#f2f2f2; float: right;">
-            <form method="POST" style="padding: 5px;">
-				<div class="form-group">
-                    <label for="cupom">Codigo Cupom:</label>
-					<input type="text" class="form-control" id="cupom" placeholder="" name="cupom" style="width:100%;">
-				</div>
-				<button type="submit" class="btn btn-primary">Resgatar</button>
-			</form>
-        </div>
 	</div>
 				<br>
 				<div class="container" style="background-color:#f2f2f2; border: 1px solid #7575a3; padding: 5px;">
 					<form method="POST" style="padding: 5px;">
 						<div class="form-group">
-						  <label for="cep">CEP:</label>
+						  <label style="color:#000;" for="cep">CEP:</label>
 						  <input type="text" class="form-control" id="cep" value="<?php echo $dados['cep'];?>" name="cep" style="width:20%;">
 						</div>
 						<div class="form-group">
-						  <label for="telefone">Telefone:</label>
+						  <label style="color:#000;" for="telefone">Telefone:</label>
 						  <input type="tel" class="form-control" id="telefone" value="<?php echo $dados['telefone'];?>" name="telefone" style="width:20%;">
 						</div>
 						<div class="form-group">
-						  <label for="endereco">Endereco:</label>
+						  <label style="color:#000;" for="endereco">Endereco:</label>
 						  <input type="text" class="form-control" id="endereco" value="<?php echo $dados['endereco'];?>" name="endereco" style="width:40%;">
-						  <label for="num_casa">Numero da Casa:</label>
+						  <label style="color:#000;" for="num_casa">Numero da Casa:</label>
 						  <input type="text" class="form-control" id="num_casa" value="<?php echo $dados['num_casa'];?>" name="num_casa" style="width:10%;">
 						</div>
                         <div class="form-group">
-                          <label for="referencia">Referencia:</label>
+                          <label style="color:#000;" for="referencia">Referencia:</label>
 						  <input type="text" class="form-control" id="referencia" value="<?php echo $dados['referencia'];?>" name="referencia" style="width:40%;">
                         </div>
 						<div class="form-group">
-						  <label for="cidade">Cidade:</label>
+						  <label style="color:#000;" for="cidade">Cidade:</label>
 						  <input type="text" class="form-control" id="cidade" value="<?php echo $dados['cidade'];?>" name="cidade" style="width:40%;">
-						  <label for="estado">Estado:</label>
+						  <label style="color:#000;" for="estado">Estado:</label>
 						  <input type="text" class="form-control" id="estado" value="<?php echo $dados['estado'];?>" name="estado" style="width:10%;">
 						</div>
 							<button type="submit" class="btn btn-primary">Salvar</button>

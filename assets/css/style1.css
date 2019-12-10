@@ -1,5 +1,5 @@
 * { box-sizing: border-box; 
-	color: black;}
+	color: #FFF;}
 body {
     font-family: 'Open Sans';
 	font-size:14px;
@@ -154,7 +154,7 @@ header {
 	background-color:#ECECEC;
 }
 .categoryarea a {
-	color:#000;
+	color:#fff;
 	border-right: 1px solid #e0e0e0;
 }
 .categoryarea .dropdown {
@@ -275,7 +275,7 @@ footer h3 {
 	text-decoration: none;
 }
 .linkgroups a:hover {
-	color:black;
+	color: #fff;
 }
 .linkgroups ul,
 .linkgroups li {
@@ -310,6 +310,7 @@ footer h3 {
 	border:1px solid #FFF;
 	background-color: white;
 	margin-bottom: 50px;
+	border-radius: 2px;
 }
 .product_item:hover {
 	border:1px solid #EEE;
@@ -318,6 +319,7 @@ footer h3 {
   	-o-transform: scale(1.1);
   	-ms-transform: scale(1.1);
 	transform: scale(1.1);
+	border-radius: 2px;
 }
 .product_item a {
 	text-decoration: none;

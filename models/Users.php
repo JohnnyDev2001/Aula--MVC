@@ -126,4 +126,14 @@ class Users extends model {
         return $sql;
     }
 
+    public function addImg($id_user, $target_file){
+        $sql = "UPDATE users_info SET img_perfil = :targ where id_user = :id_user";
+        $sql = $this->db->prepare($sql);
+        $sql->bindValue(":targ", $target_file);
+        $sql->bindValue(":id_user", $id_user);
+        $sql->execute();
+
+        return $sql;
+    }
+
 }

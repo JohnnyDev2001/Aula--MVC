@@ -38,7 +38,7 @@
 	<div class="col-sm-6">
 		<h3><?php $this->lang->get('PRODUCT_SPECIFICATIONS'); ?></h3>
 		<?php foreach($product_options as $po): ?>
-		<strong><?php echo $po['name']; ?></strong>: <?php echo $po['value']; ?><br/>
+		<strong style="color: yellow"><?php echo $po['name']; ?></strong>: <?php echo $po['value']; ?><br/>
 		<?php endforeach; ?>
 	</div>
 	<div class="col-sm-6">

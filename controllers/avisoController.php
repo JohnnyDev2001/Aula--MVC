@@ -1,5 +1,5 @@
 <?php
-class emailController extends controller {
+class avisoController extends controller {
 
 	private $user;
 
@@ -9,6 +9,8 @@ class emailController extends controller {
     }
 
     public function index(){
-        header("Location: ".BASE_URL."aviso");
+        $dados = array();
+
+        $this->loadView('aviso', $dados);
     }
 }

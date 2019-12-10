@@ -68,8 +68,8 @@
 						
 						<div class="search_area">
 							<form action="<?php echo BASE_URL; ?>busca" method="GET">
-								<input type="text" name="s" value="<?php echo (!empty($viewData['searchTerm']))?$viewData['searchTerm']:''; ?>" required placeholder="<?php $this->lang->get('SEARCHFORANITEM'); ?>" />
-								<select name="category">
+								<input type="text" name="s" style="color: #000" value="<?php echo (!empty($viewData['searchTerm']))?$viewData['searchTerm']:''; ?>" required placeholder="<?php $this->lang->get('SEARCHFORANITEM'); ?>" />
+								<select style="color: #000" name="category">
 
 									<option value=""><?php $this->lang->get('ALLCATEGORIES'); ?></option>
 
@@ -199,7 +199,7 @@
 
 
 <form action="//b7web.us2.list-manage.com/subscribe/post?u=0d44bd14b441c2648668c0c5c&amp;id=156305bc7f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
-    <input type="email" value="" name="EMAIL" class="subemail required email" id="mce-EMAIL" placeholder="<?php $this->lang->get('SUBSCRIBETEXT'); ?>">
+    <input type="email" value="" name="EMAIL" class="subemail required email" id="mce-EMAIL" style="color: #000" placeholder="<?php $this->lang->get('SUBSCRIBETEXT'); ?>">
 	<input type="hidden" name="b_0d44bd14b441c2648668c0c5c_156305bc7f" tabindex="-1" value="">
     <input type="submit" value="<?php $this->lang->get('SUBSCRIBEBUTTON'); ?>" name="subscribe" id="mc-embedded-subscribe" class="button">
 </form>
@@ -213,8 +213,8 @@
 	    			<div class="row">
 						<div class="col-sm-4">
 							<a href="<?php echo BASE_URL; ?>"><img width="150" src="<?php echo BASE_URL; ?>assets/images/music.png" /></a><br/><br/>
-							<strong>Music Space</strong><br/><br/>
-							<strong>Av. Bahia, 1739 - Indaiá, Caraguatatuba - SP, 11665-071</strong>
+							<strong style="color: yellow">Music Space</strong><br/><br/>
+							<strong style="color: yellow">Av. Bahia, 1739 - Indaiá, Caraguatatuba - SP, 11665-071</strong>
 						</div>
 						<div class="col-sm-8 linkgroups">
 							<div class="row">
