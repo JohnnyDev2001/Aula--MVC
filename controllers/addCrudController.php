@@ -26,8 +26,6 @@ class addCrudController extends controller {
                 header("Location: ".BASE_URL."addCrud");
             }
 
-        }else{
-            header("Location: ".BASE_URL."addCrud");
         }
         
         $this->loadViewCrud('addCrud', $dados);
