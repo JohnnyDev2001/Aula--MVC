@@ -2,7 +2,7 @@
 			<div class="container">
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="<?php echo BASE_URL; ?>"><?php $this->lang->get('HOME'); ?></a></li>
-					<li><a href="<?php echo BASE_URL; ?>contact"><?php $this->lang->get('CONTACT'); ?></a></li>
+					<li><a href="#cont"><?php $this->lang->get('ENDERECO'); ?></a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li class="dropdown">

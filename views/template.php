@@ -253,7 +253,7 @@
 					</div>
 	    		</div>
 	    	</div>
-	    	<div class="copyright">
+	    	<div id="cont" class="copyright">
 	    		<div class="container">
 	    			<div class="row">
 						<div class="col-sm-6">© <span>Music Space</span> - <?php $this->lang->get('ALLRIGHTRESERVED'); ?>.</div>
