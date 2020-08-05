@@ -1,3 +1,4 @@
 # MusicSpace
 
-*Um site feito com MVC sem Laravel*
+*Um e-commerce de instumentos musicais feito com php no sistema MVC sem Laravel*
+
